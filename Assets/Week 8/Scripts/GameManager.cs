@@ -10,6 +10,8 @@ namespace ChesterRocela
         [SerializeField] private Character playerTwo;
 
         [SerializeField] private Character[] players;
+        private int length;
+
         private void update()
         {
             // the check 
@@ -22,18 +24,21 @@ namespace ChesterRocela
                         players[i].enabled = false;
                     }
                 }
+
                 if (playerOne != null)
                 {
                     // the adjustment:
                     playerOne.morale -= Random.Range(1, 13);
                     playerOne.health -= Random.Range(1, 9);
-                
-                    if(playerOne.health <= 0)
-                    }
-                        Destroy(playerOne.gameObject);
-                        playerOne = null;
-                    }
                 }
+
+                if(playerOne.health <= 0)
+                {
+                    Destroy(playerOne.gameObject);
+                    playerOne = null;
+                }
+       
+        
                 if(playerTwo != null)
                 {
                     playerTwo.morale -= Random.Range(1, 13);
