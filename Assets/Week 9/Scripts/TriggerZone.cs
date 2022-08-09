@@ -1,10 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-namespace ChesterRocela
-{
-
     public class TriggerZone : MonoBehaviour
     {
         public delegate void TriggerAction();
@@ -23,4 +19,3 @@ namespace ChesterRocela
             }
         }
     }
-}

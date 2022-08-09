@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace ChesterRocela 
+/*namespace ChesterRocela 
 {
     public class GameManager : MonoBehaviour
     {
@@ -17,7 +17,7 @@ namespace ChesterRocela
             // the check 
             if  (Input.GetKeyDown(KeyCode.Space))
             {
-                if (int i = 0; i < length; int++)
+                if (int i = 0; i < length; i++)
                 {
                     if (players[i] ! = null)
                     {
@@ -54,4 +54,4 @@ namespace ChesterRocela
 
         }
     }
-}
+}*/
